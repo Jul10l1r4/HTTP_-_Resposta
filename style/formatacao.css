@@ -1,0 +1,25 @@
+body{
+}
+section{
+	padding:5px 0px;
+	filter: blur(0.1px);
+}
+section a{
+	display:inline-block;
+	background-color:#ddd;		
+	margin:5px;
+	width: calc(25% - 13px);
+	height:200px;
+	filter: grayscale(80%)
+}
+section img{
+	height:150px;
+	width:200px;
+}
+section a:hover{
+	filter: grayscale(0%);
+	background-color:#bbb;
+}
+section:hover{
+	filter: blur(0px);
+}

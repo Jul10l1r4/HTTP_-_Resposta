@@ -1,0 +1,99 @@
+@font-face {/* Fonte livre */
+  font-family: 'OpenSansEmoji';
+  font-style: regular;
+  src: url("OpenSansEmoji.ttf")
+}
+@font-face {/* Fonte privados */
+  font-family: 'Segoe UI Emoji';
+  font-style: normal;
+  src: url("seguiemj.ttf")
+}
+.emoj{/* Font mozilla ❤ */
+	font-family:"EmojiOne Mozilla";
+}
+*{/* Aplicando a mesma coisa em todas as páginas */
+	text-rendering: optimizespeed;
+	/*font-family: medium-content-sans-serif-font,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue", sans-serif;*/
+	transition-duration:0.8s;
+}
+p{
+	text-align:justify;
+	margin:20px;
+	font-size: 20px;
+	color:#444;
+	font-weight: 400;
+	line-height: 1.58;
+	max-width:95%;
+	min-width:60%
+}
+h1, h2{
+	color:#333;
+	text-align:center;
+	font-weight: 600;
+	line-height: 1.58;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+h1{
+	font-size:40px;
+	border-bottom:2px solid #EAECEF;
+}
+/* Suporte a tag <figure> */
+figure{
+	/* Configure a ação que deja */
+}/* E essa outra tem que ficar dentro da tag figure, aqui dentro fica a descrição da imagem(importantissimo)*/
+figure>img{
+	min-width:100px;
+	max-width:90%;
+}
+figcaption{
+	color:#000;
+	font-size:14px;
+	font-weight: bold;
+	text-align:center;
+}
+/* Tag code, onde fica o código */
+code{
+	font-family: 'Source Code Pro', monospace;
+	border-radius:3px;
+	background:#eee;
+	padding:5px;
+	color: #bf616a;
+}/* Blockquote, para falar frase ou citações */
+blockquote{
+	border-left:3px solid #000;
+	margin-left:10%;
+	padding:0 15px;
+	font-weight:400;
+	font-style: italic;
+	text-align:left;
+}
+hr{
+	height:0px;
+	margin-top:52px;
+	margin-bottom:42px;
+	border:0;
+	text-align:center;
+	font-weight:bold;
+	font-size:30px;
+}/* aqueles três pontinhos lekais . . . */
+hr:before{
+    content: '...';
+    display: inline-block;
+    margin-left: .6em;
+		letter-spacing: .6em;
+    color: rgba(0,0,0,.68);
+    position: relative;
+    top: -30px;
+}
+.pre{
+	font-style:italic;
+	color:#000;
+}
+a{
+	color:#1bd;
+	text-decoration:none;
+}
+a:hover{
+	color:#0ac;
+}
+
