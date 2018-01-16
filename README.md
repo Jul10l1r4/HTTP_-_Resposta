@@ -25,4 +25,4 @@ Todas as imagens possuem `600px` de largura, exceto os gifs que por serem animad
 O servidor que usamos é um profissional e com suporte superior, é o do próprio github, possui sua determinada estabilidade, e é certeza que não sairá do ar.
 
 # Esse projeto é livre sob liceça GPL-3 🐏 ✊
- Use e abuse, cite-me e estará tudo certo 🤹🏾‍. Leia sobre a licença [GPL-3](https://www.gnu.org/licenses/gpl-3.0-standalone.html)
+ Use, copie, edite e publique conforme queira 💙, não esqueça de citar o projeto onde se baseou 🤹🏾‍. Leia sobre a licença [GPL-3](https://www.gnu.org/licenses/gpl-3.0-standalone.html)
