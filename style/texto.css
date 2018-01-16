@@ -1,3 +1,6 @@
+body{/* ____ Configuração para a animação*/
+  scroll-behavior: smooth;	
+}
 @font-face {/* Fonte livre */
   font-family: 'OpenSansEmoji';
   font-style: regular;
