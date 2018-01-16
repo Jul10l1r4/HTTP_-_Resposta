@@ -7,18 +7,22 @@ body{
 	overflow-x: hidden;
 }
 section{
-	padding:5px 0px;
-	filter: blur(0.1px);
+	margin: auto;
+	position: relative;
+	left:0;
+	padding: 0 20px;
+	
 }
 section a{
 	display:inline-block;
 	background-color:#ddd;		
 	margin:5px;
-	width: 300px;//calc(25% - 13px);
+	width: 300px;/*calc(25% - 13px);*/
 	height:200px;
-	filter: grayscale(80%)
+	filter: grayscale(60%);
+	filter: blur(0.18px);
 }
-section img{
+a img{
 	height:150px;
 	width:200px;
 }
@@ -35,5 +39,5 @@ section a:hover{
 	background-color:#bbb;
 }
 section:hover{
-	filter: blur(0px);
+	/* Efeito ah definir */
 }
