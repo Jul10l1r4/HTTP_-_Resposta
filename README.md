@@ -13,3 +13,16 @@ Funciona da seguinte forma, uma vez que é configurado uma página de tratamento
   response.write(`<img src="https://jul10l1r4.github.io/HTTP_-_Resposta/img/${códigoDeErro}"`) 
 ```
 Viu? bem simples né, em apenas uma linha de código foi acrescentado até uma imagem relacionada a qualquer tema de erro possível de sua aplicação.
+
+É usado apenas imagens, por motivos de segurança, e as imagens são criptografadas, sendo assim os dados que forem levados, por exemplo em um formulário cujo o alvo esteja fora do ar por muitas pessoas usarem ao mesmo tempo, ele direcionararia para esta página, onde eu mesmo poderia pegar todos os dados, pensando nisso criamos imagens, nenhuma forma de dados será passada, e isso faz com que você e seus usuários estejam seguros.
+
+## É rápido e leve 🍃
+
+O uso dessa api possibilita imagens cada vez trabalhadas para o mínimo de suporte a internet do user, diminuímos o máximo de forma binária os dados, para que seja rápidamente carregado e tenha sua determinada qualidade.
+
+Todas as imagens possuem `600px` de largura, exceto os gifs que por serem animados possuem um peso um pouco superior as outras e assim diminuímos seus tamanhos para normalizalas, e assim todas as imagens são leves o suficiente para serem rápidamentes carregadas.
+
+O servidor que usamos é um profissional e com suporte superior, é o do próprio github, possui sua determinada estabilidade, e é certeza que não sairá do ar.
+
+# Esse projeto é livre sob liceça GPL-3 🐏 ✊
+ Use e abuse, cite-me e estará tudo certo 🤹🏾‍. Leia sobre a licença [GPL-3](https://www.gnu.org/licenses/gpl-3.0-standalone.html)
