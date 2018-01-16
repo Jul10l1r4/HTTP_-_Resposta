@@ -8,7 +8,7 @@ A simplicidade do uso é o mais interessante, a forma de uso é apenas uma linha
 
 Funciona da seguinte forma, uma vez que é configurado uma página de tratamento de erro, ela apenas linka uma imagem com a api relacionada, para fazer isso basta acrescentar a variável, dessa forma que mostro em Node.js:
 
-```nodejs
+```ecmascript
   // Exemplo de resposta em caso de códigos de erro
   response.write(`<img src="https://jul10l1r4.github.io/HTTP_-_Resposta/img/${códigoDeErro}"`) 
 ```
