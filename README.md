@@ -14,6 +14,8 @@ Funciona da seguinte forma, uma vez que é configurado uma página de tratamento
 ```
 Viu? bem simples né, em apenas uma linha de código foi acrescentado até uma imagem relacionada a qualquer tema de erro possível de sua aplicação.
 
+> [Veja em várias linguagens](https://notabug.org/Jul10l1r4/Exemplos-API-http-memes)
+
 É usado apenas imagens, por motivos de segurança, e as imagens são criptografadas, sendo assim os dados que forem levados, por exemplo em um formulário cujo o alvo esteja fora do ar por muitas pessoas usarem ao mesmo tempo, ele direcionararia para esta página, onde eu mesmo poderia pegar todos os dados, pensando nisso criamos imagens, nenhuma forma de dados será passada, e isso faz com que você e seus usuários estejam seguros.
 
 ## É rápido e leve 🍃
