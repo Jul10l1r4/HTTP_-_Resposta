@@ -20,6 +20,7 @@ body{/* ____ Configuração para a animação*/
 	transition-duration:0.8s;
 }
 p{
+	font-family: medium-content-sans-serif-font,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue", sans-serif;
 	text-align:justify;
 	margin:20px;
 	font-size: 20px;
