@@ -9,34 +9,49 @@ body{
 	margin:0px;
 	position:absolute;
 	overflow-x: hidden;
+	left:-5px;
+}
+header{
+	animation-name:fadein;
+	animation-duration:0.5s
 }
 section{
 	margin: auto;
 	position: relative;
 	left:0;
 	padding: 0 20px;
+	animation-name:fadein;
+	animation-duration:0.5s;
 	
 }
 section a{
 	display:inline-block;
 	background-color:#ddd;		
 	margin:5px;
-	width: 300px;/*calc(25% - 13px);*/
+	width: 300px;
 	height:200px;
 	filter: grayscale(60%);
-	filter: blur(0.18px);
+	animation-name:fadein;
+	animation-duration:1s;
 }
 a img{
 	height:150px;
 	width:200px;
+	animation-name:fadein;
+	animation-duration:1.4s;
 }
 footer{
 	background-color:#000;
+	position:relative;
 	bottom:0;
-	left:0px;
+	left:5px;
+	width:100%;
+	right:0;
 	text-align:center;
 	padding:30px 0px;
 	color:#fff;
+	animation-name:fadein;
+	animation-duration:2s;
 }
 section a:hover{
 	filter: grayscale(0%);
@@ -44,4 +59,34 @@ section a:hover{
 }
 section:hover{
 	/* Efeito ah definir */
+}
+@media (max-width:800px){
+	section{
+		right:0;
+		padding:0;
+		text-align:center;
+		width:100%
+	}
+	section a{
+		display:block;
+		width:100%;/*calc(25% - 13px);*/
+		height:90%;
+		left:-5px;
+		padding:10px 0px;
+		filter: grayscale(0%);
+	}
+	a img{
+		width:500px;
+		height:auto
+	}
+}
+@keyframes fadein{
+	0%{
+		opacity:0;
+		filter: grayscale(60%)
+	}
+	100%{
+		opacity:1;
+		filter: grayscale(0%)
+	}
 }
