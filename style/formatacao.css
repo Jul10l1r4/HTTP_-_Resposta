@@ -59,7 +59,7 @@ section a:hover{
 }
 section:hover{
 	/* Efeito ah definir */
-}
+}/* para plataformas mobiles */
 @media (max-width:800px){
 	section{
 		right:0;
@@ -80,6 +80,7 @@ section:hover{
 		height:auto
 	}
 }
+/* Animações */
 @keyframes fadein{
 	0%{
 		opacity:0;
