@@ -53,6 +53,12 @@ footer{
 	animation-name:fadein;
 	animation-duration:2s;
 }
+footer img{
+	display:block;
+	text-align:center;
+	width:150px;
+	margin: auto
+}
 section a:hover{
 	filter: grayscale(0%);
 	background-color:#bbb;
