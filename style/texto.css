@@ -100,4 +100,33 @@ a{
 a:hover{
 	color:#0ac;
 }
-
+/* Para o topo, botão */
+.tutop{ /* Este é para o padrão, não queremos que nosso botão apareça para uma pessoa que já est no topo né?! */
+	display:none;
+}/* Este, já é a instrução para quando o sueito descer */
+.totop, .totop img{
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	z-index:3;
+	opacity:.9;
+	position:fixed;
+}/* Leve efeito para identificar que o botão não é objeto do texto */
+.totop:hover{
+	opacity:1
+}/* Animação, ver arquivo Ecmascript/scroll-*, onde faz referencia a essa animação */
+@keyframes totop{
+	0%{
+		opacity:0
+	}100%{
+		opacity:.9
+	}
+}/* mesmo comentário da linha 18 */
+@keyframes tutop{
+	0%{
+		opacity:.9
+	}100%{
+		opacity:0
+	}
+}
