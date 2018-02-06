@@ -1,7 +1,6 @@
-# :trollface:
 # Respostas em forma de imagens 🤘🏿 
 
-> [Conheça a API](https://jul10l1r4.github.io/HTTP_-_Resposta/)
+> [Conheça a API :trollface:](https://jul10l1r4.github.io/HTTP_-_Resposta/)
 
 De uma forma prática e simples, é uma api onde identifica qual o número do erro e gerencia uma imagem de um meme relacionado ao código de erro.
 
