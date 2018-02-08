@@ -32,7 +32,7 @@ div.central{
   color:#ddd;
 }
 div.central img{
-  max-width: 60%;
+  max-height: 90%;
   animation-name:crescer;
   animation-duration:0.80s;
 }
