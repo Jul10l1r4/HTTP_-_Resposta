@@ -24,7 +24,7 @@ section{
 	animation-duration:0.5s;
 	
 }
-section a{
+section .a{
 	display:inline-block;
 	background-color:#ddd;		
 	margin:5px;
@@ -35,7 +35,7 @@ section a{
 	animation-duration:1s;
 	font-family:medium-content-sans-serif-font,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue", sans-serif;
 }
-a img{
+.a img{
 	height:150px;
 	width:200px;
 	animation-name:fadein;
@@ -61,7 +61,7 @@ footer img{
 	width:150px;
 	margin: auto
 }
-section a:hover{
+section .a:hover{
 	filter: grayscale(0%);
 	background-color:#bbb;
 }
@@ -75,7 +75,7 @@ section:hover{
 		text-align:center;
 		width:100%
 	}
-	section a{
+	section .a{
 		display:block;
 		width:100%;/*calc(25% - 13px);*/
 		height:90%;
@@ -83,7 +83,7 @@ section:hover{
 		padding:10px 0px;
 		filter: grayscale(0%);
 	}
-	a img{
+	.a img{
 		width:500px;
 		height:auto
 	}
