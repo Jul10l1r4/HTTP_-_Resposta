@@ -32,7 +32,7 @@ div.central{
   color:#ddd;
 }
 div.central img{
-  max-height: 30em;
+  max-height: 35em;
   animation-name:crescer;
   animation-duration:0.80s;
 }
@@ -51,7 +51,7 @@ div.central img{
 	}
 	@keyframes crescera{
 		0%{
-		  max-width: 62%;
+		  max-width: 0%;
 		}
 		100%{
 		  max-width: 100%;
@@ -61,7 +61,7 @@ div.central img{
 
 @keyframes crescer{
 	0%{
-	  max-width: 40%;
+	  max-width: 0%;
 	}
 	100%{
 	  max-width: 60%;
