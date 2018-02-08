@@ -36,6 +36,9 @@ div.central img{
   animation-name:crescer;
   animation-duration:0.80s;
 }
+#caption{
+	text-align:center;	
+}
 @media (max-width:800px){
 	div.bc{
 		width:45%;
