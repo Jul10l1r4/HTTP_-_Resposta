@@ -38,6 +38,7 @@ div.central img{
 }
 #caption{
 	text-align:center;	
+	color:#fff
 }
 @media (max-width:800px){
 	div.bc{
