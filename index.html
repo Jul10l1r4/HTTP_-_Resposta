@@ -7,6 +7,7 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no"/>
 		<link rel="stylesheet" href="style/texto.css"/>
 		<link rel="stylesheet" href="style/formatacao.css"/>
+		<link rel="stylesheet" href="style/bloco.css"/>
 		<meta name="author" content="Julio Lira"/>
 		<meta name="robots" content="index, follow">
 		<meta property="og:site_name" content="https://jul10l1r4.github.io/HTTP_-_Resposta/" />
@@ -31,6 +32,14 @@
 
 	</head>
 	<body>
+		<!-- bloco da imagem a aparecer -->
+  <div id="bloco" onclick="this.style.display = 'none';" style="display: none;">
+      <div class="central">
+        <em style="color:#aaa">Aperte em qualquer lugar para diminuir a imagem</em><br/>
+        <img id="default" src="algo.aq.blx"/>
+        <p id="caption">olá</p>
+      </div>
+    </div>
 		<header id="top">
 			<h1>API - Resposta de estatos http <span class="emoj">😏</span></h1>
 			<p>	<code>https://jul10l1r4.github.io/HTTP_-_Resposta/img/[Seu código de erro]</code></p>
@@ -126,13 +135,13 @@ em uma simples tag <code>img</code> com o atriburo <code>src="https://jul10l1r4.
 			<a href="https://github.com/Jul10l1r4/HTTP_-_Resposta" target="_blank">Veja o código-fonte</a><br/>ou<br/>
 			<a href="https://notabug.org/Jul10l1r4/Exemplos-API-http-memes" target="_blank">Veja exemplos de uso em algumas linguagens e se souber alguma que não tenha ainda, ajude-nos</a>.
 		</footer>
-    <script>// Mexa nisso amanhã
+    <script>// Mexa nisso hoje
 	// Modal Image Gallery foda-see jquery
-	const onClick = (a, b) => {// Use vaariaveis com poucas letras, economiz*/
-		document.getElementById ( 'default' ).src = b;
-		document.getElementById ( 'bloco' ).style.display = 'block';
-		let captionText = document.getElementById( 'caption' );
-		captionText.innerHTML = a.alt;
+	const onClick = ( a, b ) => {// Use vaariaveis com poucas letras, economiz*/
+		document.getElementById ( 'default' ).src = a;
+		document.getElementById ( 'bloco' ).style.display = 'block'
+		let captionText = document.getElementById( 'caption' )
+		captionText.innerHTML = b
 	}
     </script>
 	</body>
