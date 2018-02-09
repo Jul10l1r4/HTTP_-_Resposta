@@ -41,6 +41,12 @@ h1{
 	font-size:40px;
 	border-bottom:2px solid #EAECEF;
 }
+.fundo{
+
+  background-image: url(https://instagram.fnat2-1.fna.fbcdn.net/vp/c86b9975b58d82a3e5ea3526131a8d2a/5B146E0F/t51.2885-15/e35/26868816_181404315800705_76975572110016512_n.jpg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #6c030300;	
+}
 /* Suporte a tag <figure> */
 figure{
 	/* Configure a ação que deja */
