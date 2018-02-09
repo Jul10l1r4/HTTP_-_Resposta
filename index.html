@@ -1,179 +1,147 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+	<head>
+		<meta charset="utf-8"/>
+		<title>HTTP | Meme Resposta API</title>	
+		<link rel="icon" type="image/png" href="img/favicon.png" />
+		<meta name="viewport" content="width=device-width, user-scalable=no"/>
+		<link rel="stylesheet" href="style/texto.css"/>
+		<link rel="stylesheet" href="style/formatacao.css"/>
+		<link rel="stylesheet" href="style/album.css"/>
+		<meta name="author" content="Julio Lira"/>
+		<meta name="robots" content="index, follow">
+		<meta property="og:site_name" content="https://jul10l1r4.github.io/HTTP_-_Resposta/" />
+		<meta property="og:url" content="https://jul10l1r4.github.io/HTTP_-_Resposta/" />
+		<meta name="description" content="Crie sua página interativa e personalizada de resposta de erros http, usando memes criamos uma api simplíssima onde em 5 linhas de código você cria um sistema automático e seguro de mensagem de erro, teste e venha dar uma olhada"/>
+		<meta name="keywords" content="segurança, security,sec, osec,roadsec,hack,hacking,pentest,web, invasion,RE,Julio Lira,http, https, erro, error, mensagem, criar, 404, html, php, c, css, javascript, java, go, python, haskell, git, not a bug, jul10l1r4, Julio Lira, br, zueira, memes, meme, mene, risos, rs, huehuehue, kkk, kkkkkkj, perdi a criatividade kkdkd, http, http meme resposta, api meme, api resposta"/>
+		<meta property="og:title" content="Crie páginas de erro interativas e rápidas 😏">
+		<meta property="og:image" content="/img/logo.png"/>
+		<meta property="og:description" content="Crie sua página interativa e personalizada de resposta de erros http, usando memes criamos uma api simplíssima onde em 5 linhas de código você cria um sistema automático e seguro de mensagem de erro, teste e venha dar uma olhada"/>
+		<meta property="og:author" content="Julio Lira"/>
+		<!-- O responsável pelo botão totop -->
+		<script src="Ecmascript/scroll-smart.js"></script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112626775-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		  gtag('config', 'UA-112626775-1');
+		</script>
 
-<head>
-	<meta charset="utf-8" />
-	<title>HTTP | Meme Resposta API</title>
-	<link rel="icon" type="image/png" href="img/favicon.png" />
-	<meta name="viewport" content="width=device-width, user-scalable=no" />
-	<link rel="stylesheet" href="https://rootthings.org/style/texto.css" />
-	<link rel="stylesheet" href="style/formatacao.css" />
-	<link rel="stylesheet" href="style/album.css" />
-	<meta name="author" content="Julio Lira" />
-	<meta name="robots" content="index, follow">
-	<meta property="og:site_name" content="https://jul10l1r4.github.io/HTTP_-_Resposta/" />
-	<meta property="og:url" content="https://jul10l1r4.github.io/HTTP_-_Resposta/" />
-	<meta name="description" content="Crie sua página interativa e personalizada de resposta de erros http, usando memes criamos uma api simplíssima onde em 5 linhas de código você cria um sistema automático e seguro de mensagem de erro, teste e venha dar uma olhada"
-	/>
-	<meta name="keywords" content="segurança, security,sec, osec,roadsec,hack,hacking,pentest,web, invasion,RE,Julio Lira,http, https, erro, error, mensagem, criar, 404, html, php, c, css, javascript, java, go, python, haskell, git, not a bug, jul10l1r4, Julio Lira, br, zueira, memes, meme, mene, risos, rs, huehuehue, kkk, kkkkkkj, perdi a criatividade kkdkd, http, http meme resposta, api meme, api resposta"
-	/>
-	<meta property="og:title" content="Crie páginas de erro interativas e rápidas 😏">
-	<meta property="og:image" content="/img/logo.png" />
-	<meta property="og:description" content="Crie sua página interativa e personalizada de resposta de erros http, usando memes criamos uma api simplíssima onde em 5 linhas de código você cria um sistema automático e seguro de mensagem de erro, teste e venha dar uma olhada"
-	/>
-	<meta property="og:author" content="Julio Lira" />
-	<!-- O responsável pelo botão top -->
-	<script src="Ecmascript/scroll-smart.js"></script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112626775-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag('js', new Date());
-
-		gtag('config', 'UA-112626775-1');
-	</script>
-
-</head>
-
-<body>
-	<!-- bloco da imagem a aparecer -->
-	<div id="bloco" onclick="this.style.display = 'none';" style="display: none;">
-		<div class="central">
-			<em style="color:#aaa">CLIQUE EM QUALQUER LUGAR PARA DIMINUIR A IMAGEM.</em>
-			<br/>
-			<img id="default" src="algo.aq.blx" />
-			<p id="caption">olá</p>
-		</div>
-	</div>
-	<header id="top">
-		<h1>API - Resposta de status http
-			<span class="emoj">😏</span>
-		</h1>
-		<p>
-			<code>https://jul10l1r4.github.io/HTTP_-_Resposta/img/[Seu código de erro]</code>
-		</p>
-		<p>
-			Veja as imagens de erro, pode baixá-las e usar quando quiser ❤.
-			<a href="#E_como_eu_disse">Como Usar</a>.
-		</p>
-		<hr/>
-	</header>
-	<section id="blockimages">
-
-		<div class="a" onclick="onClick( 'img/200', '200 -  Oquei')">
-			<figure>
-				<img src="img/200">
-				<figcaption> 200 | Okay</figcaption>
-			</figure>
-		</div>
-		<div class="a" onclick="onClick( 'img/201', '201 | Criado')">
-			<figure>
-				<img src="img/201">
-				<figcaption> 201 | Criado</figcaption>
-			</figure>
-		</div>
-		<div class="a" onclick="onClick( 'img/204', '204 -  Nenhum Conteúdo')">
-			<figure>
-				<img src="img/204">
-				<figcaption> 204 | Nenhum Conteúdo</figcaption>
-			</figure>
-		</div>
-		<div class="a" onclick="onClick( 'img/304', '304 | Não modificado')">
-			<figure>
-				<img src="img/304">
-				<figcaption> 304 | Não modificado</figcaption>
-			</figure>
-		</div>
-		<div class="a" onclick="onClick( 'img/400', '400 | Requisição inválida')">
-			<figure>
-				<img src="img/400">
-				<figcaption> 400 | Requisição inválida</figcaption>
-			</figure>
-		</div>
-		<div class="a" onclick="onClick( 'img/401', '401 -  Não autorizado')">
-			<figure>
-				<img src="img/401">
-				<figcaption> 401 - Não autorizado</figcaption>
-			</figure>
-		</div>
-		<div class="a" onclick="onClick( 'img/403', '403 | Proibido')">
-			<figure>
-				<img src="img/403">
-				<figcaption> 403 | Proibido</figcaption>
-			</figure>
-		</div>
-		<div class="a" onclick="onClick( 'img/404', '404 | Não encontrado')">
-			<figure>
-				<img src="img/404">
-				<figcaption> 404 | Não encontrado</figcaption>
-			</figure>
-		</div>
-		<div class="a" onclick="onClick( 'img/409', '409 | Conflito')">
-			<figure>
-				<img src="img/409">
-				<figcaption> 409 | Conflito</figcaption>
-			</figure>
-		</div>
-		<div class="a" onclick="onClick( 'img/500', '500 | Erro interno do servidor')">
-			<figure>
-				<img src="img/500">
-				<figcaption> 500 | Erro interno do servidor</figcaption>
-			</figure>
-		</div>
-
-	</section>
-	<aside id="E_como_eu_disse">
-
-		<h2>Use e Abuse!</h2>
-		<p>
-			Temos um banco de imagens de resposta de erros, para usá-las basta inserir em qualquer que seja a aplicação
-			<code title="Seu código de erro, que pode ser uma variável">https://jul10l1r4.github.io/HTTP_-_Resposta/Código de erro</code>, lembre-se de que não precisa usar a extensão
-			<code>.jpg</code>, já reduzimos isso para facilitar.
-		</p>
-		<h2>Como Funciona?</h2>
-		<p>
-			Usamos imagens relacionadas a
-			<a href="https://pt.wikipedia.org/wiki/Meme_(Internet)">memes</a> para substituir as mensagens de erro, usamos apenas imagens para evitar o trabalho de criar uma html apenas
-			para uma página de erro, que poderia ser usado para capturar informações, pensando nisso utilizamos imagens, que você
-			apenas "linka" em uma simples tag "
-			<code>img</code>" com o atributo "
-			<code>src="https://jul10l1r4.github.io/HTTP_-_Resposta/img/404"</code>," nesse caso fizemos o erro
-			<span class="pre">404 - Servidor não Encontrado</span>. dê uma olhada neste
-			<a href="https://notabug.org/Jul10l1r4/Exemplos-API-http-memes">repositório</a> com o código-fonte comentado em algumas linguagens para você usar. E veja como configurar a sua no seu
-			próprio servidor/site acrescentando apenas algumas "linhas" no
-			<code>.htaccess</code>.
-			<a href="https://notabug.org/Jul10l1r4/Exemplos-API-http-memes/src/master/Configurando-p%c3%a1ginas-de-erro">Acesse este link</a>.
-		</p>
-	</aside>
-	<!-- Ancora, na qual é exibida conforme a posição de rolagem, ver o arquivo "Ecmascript/scroll-smart.js" -->
-	<a href="#top" class="tutop">
-		<img src="img/backtotop.png" alt="imagem para o topo" title="subir ao topo" />
-	</a>
-	<footer>
-		<img src="img/logo.png" title="Logo http - meme resposta" />
-		<span class="emoj">🐏</span> Licença
-		<a href="https://github.com/Jul10l1r4/HTTP_-_Resposta/blob/master/LICENSE" target="_blank">GPL-3</a>, use como quiser.
-		<br/>
-		<a href="https://github.com/Jul10l1r4/HTTP_-_Resposta" target="_blank">Veja o código-fonte</a>
-		<br/>ou
-		<br/>
-		<p>Veja exemplos de uso em algumas linguagens e se conhecer alguma que ainda não tenha,
-			<a href="https://notabug.org/Jul10l1r4/Exemplos-API-http-memes"
-			    target="_blank">ajude-nos</a>.</p>
-	</footer>
-	<script>
-		// Modal Image Gallery foda-see jquery
-		const onClick = (a, b) => { // Use vaariaveis com poucas letras, economiz*/
-			document.getElementById('default').src = a;
-			document.getElementById('bloco').style.display = 'block'
-			let captionText = document.getElementById('caption')
-			captionText.innerHTML = b
-		}
-	</script>
-</body>
-
+	</head>
+	<body>
+		<!-- bloco da imagem a aparecer -->
+  <div id="bloco" onclick="this.style.display = 'none';" style="display: none;">
+      <div class="central">
+        <em style="color:#aaa">Aperte em qualquer lugar para diminuir a imagem</em><br/>
+        <img id="default" src="algo.aq.blx"/>
+        <p id="caption">olá</p>
+      </div>
+    </div>
+		<header id="top">
+			<h1>API - Resposta de estatos http <span class="emoj">😏</span></h1>
+			<p>	<code>https://jul10l1r4.github.io/HTTP_-_Resposta/img/[Seu código de erro]</code></p>
+			<p>
+				Veja as imagens de erro, pode baixá-las e usar quando quiser ❤,Veja! <a href="#E_como_eu_disse?">como usar</a>.
+			</p>
+			<hr/>			
+		</header>
+		<section>
+		
+				<div class="a" onclick="onClick( 'img/200', '200 -  Oquei')">
+					<figure>
+						<img src="img/200">
+						<figcaption> 200 -  Oquei</figcaption>
+					</figure>
+				</div>
+				<div class="a" onclick="onClick( 'img/201', '201 -  Criado')">
+					<figure>
+						<img src="img/201">
+						<figcaption> 201 -  Criado</figcaption>
+					</figure>
+				</div>
+				<div class="a" onclick="onClick( 'img/204', '204 -  Nenhum conteúdo')">
+					<figure><img src="img/204">
+						<figcaption> 204 -  Nenhum conteúdo</figcaption>
+					</figure>
+				</div>
+				<div class="a" onclick="onClick( 'img/304', '304 -  Não modificado')">
+					<figure>
+						<img src="img/304">
+						<figcaption> 304 -  Não modificado</figcaption>
+					</figure>
+				</div>
+				<div class="a" onclick="onClick( 'img/400', '400 -  Requisição inválida')">
+					<figure>
+						<img src="img/400">
+						<figcaption> 400 -  Requisição inválida</figcaption>
+					</figure>
+				</div>
+				<div class="a" onclick="onClick( 'img/401', '401 -  Não autorizado')">
+					<figure><img src="img/401">
+						<figcaption> 401 -  Não autorizado</figcaption>
+					</figure>
+				</div>
+				<div class="a" onclick="onClick( 'img/403', '403 -  Proibido')">
+					<figure>
+						<img src="img/403">
+						<figcaption> 403 -  Proibido</figcaption>
+					</figure>
+				</div>
+				<div class="a" onclick="onClick( 'img/404', '404 -  Não encontrado')">
+					<figure>
+						<img src="img/404">
+						<figcaption> 404 -  Não encontrado</figcaption>
+					</figure>
+				</div>	
+				<div class="a" onclick="onClick( 'img/409', '409 -  Conflito')">
+					<figure>
+						<img src="img/409">
+						<figcaption> 409 -  Conflito</figcaption>
+					</figure>
+				</div>
+				<div class="a" onclick="onClick( 'img/500', '500 -  Erro interno do servidor')">
+					<figure>
+						<img src="img/500">
+						<figcaption> 500 -  Erro interno do servidor</figcaption>
+					</figure>
+				</div>
+				
+		</section>
+		<aside id="E_como_eu_disse?">
+			
+			<h2>E como eu disse?</h2>
+			<p>
+				Use esta api, temos um banco de imagens de resposta de erros, para usá-las basta por em qualquer que seja a aplicação <code title="Seu código de erro, que pode ser uma variável">https://jul10l1r4.github.io/HTTP_-_Resposta/Código de erro</code>, lembre-se que não precisa usar a extensão <code>.jpg</code>, já reduzimos isso para facilitar.
+			</p>
+			<h2>... E como é?</h2>
+			<p>
+		  	Usamos imagens relacionadas a <a href="https://pt.wikipedia.org/wiki/Meme_(Internet)">memes</a> para substituir as mensagens de erro, usamos apenas imagens para evitar o trabalho de se criar uma html apenas para uma página de erro, o que poderia ser usado para capturar as informações, pensando nisso fizemos imagens, que você apenas "linka"
+em uma simples tag "<code>img</code>" com o atributo "<code>src="https://jul10l1r4.github.io/HTTP_-_Resposta/img/404"</code>,"
+			nesse caso fizemos o erro <span class="pre">404 - Servidor não Encontrado</span>.
+			dê uma olhada neste repositório com o código-fonte comentado em algumas linguagens para você usar
+			<a href="https://notabug.org/Jul10l1r4/Exemplos-API-http-memes">aqui</a> e veja como configurar a sua
+			no seu próprio servidor/site acrescentando apenas algumas "linhas"
+			no <code>.htaccess</code>. <a href="https://notabug.org/Jul10l1r4/Exemplos-API-http-memes/src/master/Configurando-p%c3%a1ginas-de-erro">Aqui</a>.
+			</p>
+		</aside>
+		<!-- Ancora, na qual é exibida conforme a posição de rolagem, ver o arquivo "Ecmascript/scroll-smart.js" -->
+		<a href="#top" class="tutop"><img src="img/backtotop.png" alt="imagem para o topo" title="subir ao topo"/></a>
+		<footer>
+			<img src="img/logo.png" title="Logo http - meme resposta"/>
+			<span class="emoj">🐏</span> Licença <a href="https://github.com/Jul10l1r4/HTTP_-_Resposta/blob/master/LICENSE" target="_blank">GPL-3</a>, pode usar como quiser.<br/>
+			<a href="https://github.com/Jul10l1r4/HTTP_-_Resposta" target="_blank">Veja o código-fonte</a><br/>ou<br/>
+			<a href="https://notabug.org/Jul10l1r4/Exemplos-API-http-memes" target="_blank">Veja exemplos de uso em algumas linguagens e se souber alguma que não tenha ainda, ajude-nos</a>.
+		</footer>
+    <script>
+	// Modal Image Gallery foda-see jquery
+	const onClick = ( a, b ) => {// Use vaariaveis com poucas letras, economiz*/
+		document.getElementById ( 'default' ).src = a;
+		document.getElementById ( 'bloco' ).style.display = 'block'
+		let captionText = document.getElementById( 'caption' )
+		captionText.innerHTML = b
+	}
+    </script>
+	</body>
 </html>
