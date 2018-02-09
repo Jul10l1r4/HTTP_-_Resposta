@@ -13,7 +13,25 @@ body{
 }
 header{
 	animation-name:fadein;
-	animation-duration:0.5s
+	animation-duration:0.5s;
+	background-color: cornflowerblue;
+	padding: 1px;
+}
+header>p {
+	color: white;
+}
+header>p>a {
+	color: white;
+	text-decoration: underline;
+}
+header>p>a:hover {
+	color: blueviolet;
+	text-decoration: underline;
+}
+header h1 {
+	color: darkred;
+	background-color: red;
+	padding: 10px;
 }
 section{
 	margin: auto;
