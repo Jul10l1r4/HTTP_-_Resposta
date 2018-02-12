@@ -46,7 +46,7 @@ figure{
 	/* Configure a ação que deja */
 }/* E essa outra tem que ficar dentro da tag figure, aqui dentro fica a descrição da imagem(importantissimo)*/
 figure>img{
-	min-width:100px;
+	min-width:90px;
 	max-width:90%;
 }
 figcaption{
