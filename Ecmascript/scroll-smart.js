@@ -16,9 +16,5 @@ const Scroll = () => {// Arrow function `ES6`
 }
 // Ativa a nossa função
 window.addEventListener( `scroll`, Scroll );
-//to top
-const top = () => {
-	$('html, body').animate({
-        scrollTop: 0
-   }, 500);
-}
+
+
