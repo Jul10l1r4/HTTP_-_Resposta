@@ -176,6 +176,11 @@ em uma simples tag <code>img</code> com o atributo <code>src="https://jul10l1r4.
 			<a href="https://notabug.org/Jul10l1r4/Exemplos-API-http-memes" target="_blank">Veja exemplos de uso em algumas linguagens e se souber alguma que não tenha ainda, ajude-nos</a>.
 		</footer>
     <script>
+const top = () => {
+	$('html, body').animate({
+        scrollTop: 0
+   }, 500);
+	}
 	// Modal Image Gallery foda-see jquery
 	const onClick = ( a, b ) => {// Use vaariaveis com poucas letras, economiz*/
 		document.getElementById ( 'default' ).src = a;
