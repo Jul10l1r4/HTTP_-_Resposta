@@ -20,6 +20,7 @@
 		<meta property="og:author" content="Julio Lira"/>
 		<!-- O responsável pelo botão totop -->
 		<script src="Ecmascript/scroll-smart.js"></script>
+		<script src="Ecmascript/top.js"></script>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112626775-1"></script>
 		<script>
@@ -140,7 +141,7 @@ em uma simples tag <code>img</code> com o atributo <code>src="https://jul10l1r4.
 	<figure onclick="onClick( 'img/OBDKVI0	.jpg', 'Os nossos exemplos são 100% responsivos')">
 		<img src="img/OBDKVI0.jpg" alt="api, responsiva é HTTP - Resposta" title="Imagens responsivas"/>
 		<figcaption>Exemplos e imagens responsivas</figcaption>
-	<figure>
+	</figure>
 	</aside>
 	
 	<aside id="Dev">
@@ -175,14 +176,9 @@ em uma simples tag <code>img</code> com o atributo <code>src="https://jul10l1r4.
 			 <a href="https://github.com/Jul10l1r4/HTTP_-_Resposta" target="_blank">Veja o código-fonte</a><br/>ou<br/>
 			<a href="https://notabug.org/Jul10l1r4/Exemplos-API-http-memes" target="_blank">Veja exemplos de uso em algumas linguagens e se souber alguma que não tenha ainda, ajude-nos</a>.
 		</footer>
-    <script>/*
-const top = () => {
-	$('html, body').animate({
-        scrollTop: 0
-   }, 500);
-	}*/
+    <script>
 	// Modal Image Gallery foda-see jquery
-	const onClick = ( a, b ) => {// Use vaariaveis com poucas letras, economiz*/
+	const onClick = ( a, b ) => {// Use vaariaveis com poucas letras, economiz
 		document.getElementById ( 'default' ).src = a;
 		document.getElementById ( 'bloco' ).style.display = 'block'
 		let captionText = document.getElementById( 'caption' )
