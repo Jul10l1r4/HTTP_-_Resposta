@@ -6,7 +6,7 @@
 const up = () => {
 if (navigator.userAgent.indexOf("Chrome") > -1){
 	window.scroll({
-	  top: 2500, 
+	  top: 0, 
 	  left: 0, 
 	  behavior: 'smooth' 
 	});
