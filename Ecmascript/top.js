@@ -10,7 +10,7 @@ if (navigator.userAgent.indexOf("Chrome") > -1){
 	  left: 0, 
 	  behavior: 'smooth' 
 	});
-	return false// Ele retorna false já pra não fazer o efeito nativo, q no chrome n roda
+	return false;    // Ele retorna false já pra não fazer o efeito nativo, q no chrome n roda
 }else{
 	console.log(`Link desparado`)	
 }// porque ele verifica se é o chrome? porque o Jquery é uma lib, que pesa bastante, e nao queremos que nossa aplicaçao
